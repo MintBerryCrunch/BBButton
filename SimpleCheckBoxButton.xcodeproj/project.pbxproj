@@ -21,6 +21,11 @@
 		7C574FB5188E7129005FC0AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C574F97188E7129005FC0AE /* UIKit.framework */; };
 		7C574FBD188E7129005FC0AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C574FBB188E7129005FC0AE /* InfoPlist.strings */; };
 		7C574FBF188E7129005FC0AE /* SimpleCheckBoxButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C574FBE188E7129005FC0AE /* SimpleCheckBoxButtonTests.m */; };
+		7C574FCA188E713F005FC0AE /* BBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C574FC9188E713F005FC0AE /* BBButton.m */; };
+		7C574FD1188E8478005FC0AE /* checked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C574FCF188E8478005FC0AE /* checked_checkbox.png */; };
+		7C574FD2188E8478005FC0AE /* unchecked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C574FD0188E8478005FC0AE /* unchecked_checkbox.png */; };
+		7C574FD5188E85BC005FC0AE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7C574FD4188E85BC005FC0AE /* Podfile */; };
+		7C574FD7188E877E005FC0AE /* BBButton.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7C574FD6188E877E005FC0AE /* BBButton.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		7C574FBA188E7129005FC0AE /* SimpleCheckBoxButtonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleCheckBoxButtonTests-Info.plist"; sourceTree = "<group>"; };
 		7C574FBC188E7129005FC0AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7C574FBE188E7129005FC0AE /* SimpleCheckBoxButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleCheckBoxButtonTests.m; sourceTree = "<group>"; };
+		7C574FC8188E713F005FC0AE /* BBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBButton.h; sourceTree = "<group>"; };
+		7C574FC9188E713F005FC0AE /* BBButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBButton.m; sourceTree = "<group>"; };
+		7C574FCF188E8478005FC0AE /* checked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked_checkbox.png; sourceTree = "<group>"; };
+		7C574FD0188E8478005FC0AE /* unchecked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked_checkbox.png; sourceTree = "<group>"; };
+		7C574FD4188E85BC005FC0AE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7C574FD6188E877E005FC0AE /* BBButton.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BBButton.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +93,7 @@
 		7C574F87188E7129005FC0AE = {
 			isa = PBXGroup;
 			children = (
+				7C574FD4188E85BC005FC0AE /* Podfile */,
 				7C574F99188E7129005FC0AE /* SimpleCheckBoxButton */,
 				7C574FB8188E7129005FC0AE /* SimpleCheckBoxButtonTests */,
 				7C574F92188E7129005FC0AE /* Frameworks */,
@@ -112,6 +124,12 @@
 		7C574F99188E7129005FC0AE /* SimpleCheckBoxButton */ = {
 			isa = PBXGroup;
 			children = (
+				7C574FD3188E84F6005FC0AE /* BBButton */,
+				7C574FCF188E8478005FC0AE /* checked_checkbox.png */,
+				7C574FD0188E8478005FC0AE /* unchecked_checkbox.png */,
+				7C574FD6188E877E005FC0AE /* BBButton.podspec */,
+				7C574FC8188E713F005FC0AE /* BBButton.h */,
+				7C574FC9188E713F005FC0AE /* BBButton.m */,
 				7C574FA2188E7129005FC0AE /* AppDelegate.h */,
 				7C574FA3188E7129005FC0AE /* AppDelegate.m */,
 				7C574FA5188E7129005FC0AE /* Main.storyboard */,
@@ -150,6 +168,13 @@
 				7C574FBB188E7129005FC0AE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C574FD3188E84F6005FC0AE /* BBButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BBButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +253,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C574FD5188E85BC005FC0AE /* Podfile in Resources */,
 				7C574FAC188E7129005FC0AE /* Images.xcassets in Resources */,
+				7C574FD7188E877E005FC0AE /* BBButton.podspec in Resources */,
 				7C574F9E188E7129005FC0AE /* InfoPlist.strings in Resources */,
+				7C574FD2188E8478005FC0AE /* unchecked_checkbox.png in Resources */,
 				7C574FA7188E7129005FC0AE /* Main.storyboard in Resources */,
+				7C574FD1188E8478005FC0AE /* checked_checkbox.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C574FAA188E7129005FC0AE /* ViewController.m in Sources */,
+				7C574FCA188E713F005FC0AE /* BBButton.m in Sources */,
 				7C574FA4188E7129005FC0AE /* AppDelegate.m in Sources */,
 				7C574FA0188E7129005FC0AE /* main.m in Sources */,
 			);
@@ -460,6 +490,7 @@
 				7C574FC4188E7129005FC0AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C574FC5188E7129005FC0AE /* Build configuration list for PBXNativeTarget "SimpleCheckBoxButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +499,7 @@
 				7C574FC7188E7129005FC0AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,4 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UISlider *x;
+@property (weak, nonatomic) IBOutlet UISlider *y;
+@property (weak, nonatomic) IBOutlet UILabel *status;
+@property (weak, nonatomic) IBOutlet UISlider *sizeH;
+@property (weak, nonatomic) IBOutlet UISlider *sizeW;
+- (IBAction)changeImageSize:(id)sender;
+
 @end
